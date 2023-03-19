@@ -3,13 +3,13 @@
 
 # Variables for 3.1.1
 ubuntu_2004_cis_section3_rule_3_1_1: true
-
-ubuntu_2004_cis_section3_rule_3_1_1_params_path: /etc/default/grub
-ubuntu_2004_cis_section3_rule_3_1_1_params_regex: '^GRUB_CMDLINE_LINUX="(((?!ipv6.disable=1).)*)"$'
-ubuntu_2004_cis_section3_rule_3_1_1_params_replace: 'GRUB_CMDLINE_LINUX="\1 ipv6.disable=1"'
-ubuntu_2004_cis_section3_rule_3_1_1_params_owner: root
-ubuntu_2004_cis_section3_rule_3_1_1_params_group: root
-ubuntu_2004_cis_section3_rule_3_1_1_params_mode: '0644'
+ubuntu_2004_cis_section3_rule_3_1_1_params_script: 3.1.1.disable_ipv6.sh
+#ubuntu_2004_cis_section3_rule_3_1_1_params_path: /etc/default/grub
+#ubuntu_2004_cis_section3_rule_3_1_1_params_regex: '^GRUB_CMDLINE_LINUX="(((?!ipv6.disable=1).)*)"$'
+#ubuntu_2004_cis_section3_rule_3_1_1_params_replace: 'GRUB_CMDLINE_LINUX="\1 ipv6.disable=1"'
+#ubuntu_2004_cis_section3_rule_3_1_1_params_owner: root
+#ubuntu_2004_cis_section3_rule_3_1_1_params_group: root
+#ubuntu_2004_cis_section3_rule_3_1_1_params_mode: '0644'
 
 # Variables for 3.1.2
 ubuntu_2004_cis_section3_rule_3_1_2: true
