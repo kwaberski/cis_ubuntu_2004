@@ -3,7 +3,16 @@
 
 # Variables for 3.1.1
 ubuntu_2004_cis_section3_rule_3_1_1: true
-ubuntu_2004_cis_section3_rule_3_1_1_params_script: 3.1.1.disable_ipv6.sh
+
+ubuntu_2004_cis_section3_rule_3_1_1_params_ipv6_conf_all_disable: net.ipv6.conf.all.disable_ipv6
+ubuntu_2004_cis_section3_rule_3_1_1_params_ipv6_conf_all_disable_value: '1'
+ubuntu_2004_cis_section3_rule_3_1_1_params_ipv6_conf_default_disable: net.ipv6.conf.default.disable_ipv6
+ubuntu_2004_cis_section3_rule_3_1_1_params_ipv6_conf_default_disable_value: '1'
+ubuntu_2004_cis_section3_rule_3_1_1_params_state: present
+ubuntu_2004_cis_section3_rule_3_1_1_params_reload: yes
+ubuntu_2004_cis_section3_rule_3_1_1_params_sysctl_set: yes
+#ubuntu_2004_cis_section3_rule_3_1_1_params_script: 3.1.1.disable_ipv6.sh
+
 #ubuntu_2004_cis_section3_rule_3_1_1_params_path: /etc/default/grub
 #ubuntu_2004_cis_section3_rule_3_1_1_params_regex: '^GRUB_CMDLINE_LINUX="(((?!ipv6.disable=1).)*)"$'
 #ubuntu_2004_cis_section3_rule_3_1_1_params_replace: 'GRUB_CMDLINE_LINUX="\1 ipv6.disable=1"'
