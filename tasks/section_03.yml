@@ -517,7 +517,8 @@
   ufw:
     rule: "{{ ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwrule }}"
     direction: "{{ ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwdirection }}"
-    interface: "{{ ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwinterface }}"
+    #interface: "{{ ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwinterface }}"
+    to: "{{ ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwto }}"
     comment: "{{ ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwcomment }}"
   when:
     - ubuntu_2004_cis_firewall == "ufw"

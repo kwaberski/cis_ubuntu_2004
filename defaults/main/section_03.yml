@@ -245,7 +245,8 @@ ubuntu_2004_cis_section3_rule_3_5_1_5: true
 
 ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwrule: allow
 ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwdirection: out
-ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwinterface: all
+#ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwinterface: all
+ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwto: any
 ubuntu_2004_cis_section3_rule_3_5_1_5_params_ufwcomment: Allow all for outbound connections on all interfaces
 
 # Variables for 3.5.1.6
